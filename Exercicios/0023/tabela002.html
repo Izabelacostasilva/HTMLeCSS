@@ -13,7 +13,14 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
 
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
         }
         td, th {
             border: 1px solid black;
@@ -22,6 +29,14 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody >tr:nth-child(2n) {
+            background-color: lightgray;
         }
         td.num {
             text-align: right;
@@ -33,18 +48,20 @@
     <!--
         anatomia para tabelas grandes
         table
+           caption(titulo da tabela)
            thead 
-              tr, td, th
+              tr, td(sempre que for um dado), th(sempre que for um titulo)
            tbody
               tr, td, th  
            tfoot
               tr, td, th
     -->
     <table>
+        <caption>População das Unidades Federativas.</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
 
             </tr>
 
@@ -66,11 +83,14 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num">00000</td>
             </tr>
 
         </tfoot>
     </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, magni nulla non nisi suscipit a, maiores laboriosam vero voluptate numquam provident cupiditate inventore nesciunt voluptas quo expedita, ipsam laborum impedit!Lorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam temporibus, voluptate nisi iste hic cum quos est debitis amet eveniet exercitationem, mollitia quia aspernatur quo ut quasi eum. Placeat, explicabo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem ea sunt numquam maiores nihil nemo vero debitis vitae placeat corrupti a ab ad, quas consequuntur laboriosam eveniet, quidem eaque.
+    </p>
 </body>
 </html>
