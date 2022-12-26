@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe {
+            width: 95vw;
+            height: 500px;
+            border: 1px solid black;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Para tabela é melhor usar div em vez de iframe.
+    Muitos sites não aceitam iframe. Mas você pode colocar telas proprias pontuais no iframe, evitando assuntos muito importante para seu site.-->
+    <h1>Teste com iframe</h1>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, numquam? Vel inventore error neque aut voluptatibus assumenda, natus illo alias molestias soluta numquam ducimus. Impedit minima dicta nesciunt tenetur iste.</p>
+
+    <iframe id="tela" name="frame"src="" >
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis libero eaque repellat doloribus ullam autem asperiores incidunt tempore nisi maxime non amet, enim sit, maiores laboriosam adipisci! Consequuntur, quis exercitationem.</p>
+</body>
+</html>
