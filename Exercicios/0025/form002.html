@@ -10,23 +10,30 @@
 
     <!--required é pra deixar o campo obrigatorio.
 
-    autocoplete off é importante em usuario e senha, vaso não queira q mostre usuarios e senhas anteriores, mas em on facilita avida do usuario, então deixaria ele em on e especificar o q é cada campo, ex username para usuarios e current-password pra senhas já cadastradas.
+    autocoplete off é importante em usuario e senha, caso não queira q mostre usuarios e senhas anteriores, mas em on facilita avida do usuario, então deixaria ele em on e especificar o q é cada campo, ex username para usuarios e current-password pra senhas já cadastradas.
 
 minlength é o comprimento minimo, e maxlength é o comprimento maximo de letras.
 
 pode usar o size depois pra definir o tamanho da caixa.
 
-no placeholder vc pode colocar uma dica do q o usuario tem q colocar. -->
+no placeholder vc pode colocar uma dica do q o usuario tem q colocar. 
+
+Estudar mais sobre regex.
+
+fieldset é a borda. -->
     <h1>Teste de formulário</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
-    <p>
-        <label for="iusu">Usuário: </label>
-        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" placeholder="nome do usuário" autocomplete="username">
-    </p>
-    <p>
-        <label for="isen">Senha: </label>
-        <input type="password" nome="sen" id="isen" required minlength="8" maxlength="20" placeholder="mínimo 8 caracteres" autocomplete="current-password">
-    </p>
+    <fieldset>
+        <legend> login</legend>
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" placeholder="nome do usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" nome="sen" id="isen" required minlength="8" maxlength="20" placeholder="mínimo 8 caracteres" autocomplete="current-password">
+        </p>
+    </fieldset>
     <p>
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
