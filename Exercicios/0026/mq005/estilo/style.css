@@ -21,6 +21,12 @@ header > h1 {
     text-align: center;
 }
 
+i#burguer {
+    background-color: gray;
+    display: block;
+
+}
+
 menu {
     display: block;
 }
